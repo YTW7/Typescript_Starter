@@ -10,21 +10,25 @@ A minimal boilerplate to quickly get started with TypeScript in a Node.js enviro
 
 ```bash
 yarn init -y
+```
 
 ### 2. Install TypeScript and Node.js types
 
 ```bash
 yarn add typescript @types/node
+```
 
 ### 3. Install development tools
 
 ```bash
 yarn add -D ts-node
+```
 
 ### 4. Initialize TypeScript configuration aka tsconfig.json
 
 ```bash
 yarn tsc --init --rootDir ./ --outDir ./dist --esModuleInterop --lib "ES2019" --module commonjs --resolveJsonModule --noImplicitAny
+
 This sets up a tsconfig.json with the following compiler options:
 
     rootDir: Source files location (./)
@@ -40,7 +44,7 @@ This sets up a tsconfig.json with the following compiler options:
     resolveJsonModule: Allows importing .json files
 
     noImplicitAny: Enforces explicit typing for better type safety
-
+```
 
 ### 5. Add Scripts in package.json
 
@@ -50,7 +54,10 @@ This sets up a tsconfig.json with the following compiler options:
   "build": "tsc",
   "start": "node dist/index.js"
 }
+```
+### 6. Example Folder Structure
 
+```bash
 your-project/
 ├── src/
 │   └── index.ts
@@ -58,6 +65,7 @@ your-project/
 ├── package.json
 ├── tsconfig.json
 └── README.md
+```
 
 
 
